@@ -1,0 +1,16 @@
+html {
+  font-size: 1rem;
+  color: #692831;
+}
+
+body {
+  background: #00f7a1;
+}
+
+p, li {
+  font-size: 50px;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  color: #692831;
+}
+/*# sourceMappingURL=style.css.map */

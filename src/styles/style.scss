@@ -1,0 +1,19 @@
+$font-size: 1rem;
+$font-color: rgb(105, 40, 49);
+$bg: rgb(0, 247, 161);
+
+html {
+  font-size: $font-size;
+  color: $font-color;
+}
+
+body {
+    background: $bg;
+}
+
+p,li {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+    color: $font-color;
+}

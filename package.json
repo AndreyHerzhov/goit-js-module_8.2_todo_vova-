@@ -1,0 +1,38 @@
+{
+  "name": "goit-js-module_8.2_todo_vova",
+  "version": "1.0.0",
+  "description": "webpack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyHerzhov/goit-js-module_8.2_todo_vova-.git"
+  },
+  "keywords": [],
+  "author": "Andrey Herzhov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyHerzhov/goit-js-module_8.2_todo_vova-/issues"
+  },
+  "homepage": "https://github.com/AndreyHerzhov/goit-js-module_8.2_todo_vova-#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^13.0.0",
+    "style-loader": "^3.3.1",
+    "webpack-dev-server": "^4.9.0"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "lodash": "^4.17.21",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  }
+}
