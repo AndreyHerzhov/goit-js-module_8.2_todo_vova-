@@ -17,3 +17,40 @@ p,li {
     font-family: 'Courier New', Courier, monospace;
     color: $font-color;
 }
+
+button {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  width: 200px;
+  height: 30px;
+  border-radius: 12px;
+  transition:  250ms ease-in-out;
+
+  &:hover{
+    cursor: pointer;
+    background-color: aqua;
+  }
+  &:active{
+    background-color: rgb(5, 98, 98);
+  }
+}
+
+input {
+  font-size: 26px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.wrapper {
+  padding: 15px;
+}
+
+li {
+  width: 300px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  border: solid 1px black;
+  margin-top: 5px;
+  padding-left: 15px;
+}
