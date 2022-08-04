@@ -8,6 +8,7 @@ html {
 }
 
 body {
+  padding: 50px;
     background: $bg;
 }
 
@@ -37,13 +38,20 @@ button {
 }
 
 input {
+  
   font-size: 26px;
   height: 30px;
   border-radius: 10px;
 }
 
 .wrapper {
+  margin-top: 50px;
+  margin: 0 auto;
   padding: 15px;
+  width: 600px;
+  height: 1000px;
+  background: aliceblue;
+  border-radius: 20px;
 }
 
 li {
