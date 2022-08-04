@@ -17,11 +17,13 @@ const clearAll = () => {
          const savedList = JSON.parse(list)
          const markdown = savedList.reduce((acc, text) => acc + createLi(text), '')
          addLiToList(markdown)
-         console.log(savedList)
+        //  console.log(savedList)
      } catch (error) {
-         console.   log('parsing error')
+         console.log('parsing error')
      }
  }
+
+ 
 
  const handleSubmit = function (e) {
      e.preventDefault()
@@ -34,7 +36,7 @@ const clearAll = () => {
         const result = storage.readItem('list',[])
         result.push(value)
         storage.addItem("list",result)
-        console.log(result)
+        // console.log(result)
            // const list = localStorage.getItem('list')
            // try {
            //     const listData = list ? JSON.parse(list) : []
@@ -50,6 +52,32 @@ const clearAll = () => {
     
  }
 
+const sortByValueBtn = document.querySelector('.sort_value')
+const sortByNameBtn = document.querySelector('.sort_name')
+ 
+sortByValueBtn.addEventListener('click', sortByValue)
+sortByNameBtn.addEventListener('click', sortByName)
+
+function sortByValue(e) {
+    refs.list.innerHTML = ''
+    const result = storage.readItem('list',[])
+    const sortedByValue = result.map(el => el.split('=').reverse().join('='))
+    sortedByValue.sort((a, b) => a.localeCompare(b))
+    const sortedBack =  sortedByValue.map(el => el.split('=').reverse().join('='))
+    const markdown = sortedBack.reduce((acc, text) => acc + createLi(text), '')
+    addLiToList(markdown)
+    console.log(sortedBack)
+   
+}
+
+ function sortByName (e) {
+    refs.list.innerHTML = ''
+    const result = storage.readItem('list',[])
+    const sortedByName = result.sort((a, b) => a.localeCompare(b))  
+    const markdown = sortedByName.reduce((acc, text) => acc + createLi(text), '')
+    addLiToList(markdown)
+    console.log(sortedByName)
+}
 
 
 refs.clear.addEventListener('click', clearAll)
